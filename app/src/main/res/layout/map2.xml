@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/map2">
-    <TextView
+    <com.mapbox.mapboxsdk.maps.MapView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="map2"/>
+        android:layout_height="match_parent"
+        android:id="@+id/mapview">
+        <ProgressBar
+            android:id="@+id/probar"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:outlineAmbientShadowColor="#FF0000"
 
-</RelativeLayout>
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_percent"
+            android:textSize="50dp"
+            android:textAlignment="center"
+            />
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+</LinearLayout>

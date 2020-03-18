@@ -8,7 +8,9 @@
             android:title="map"/>
         <item android:id="@+id/map2"
             android:title="map2"/>
-        <item android:id="@+id/exit"
+        <item android:id="@+id/map3"
+            android:title="map3"/>
+        <item android:id="@+id/exit_dr"
             android:title="exit"/>
     </group>
 
